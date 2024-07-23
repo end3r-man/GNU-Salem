@@ -1,4 +1,4 @@
-<div class="w-full h-16 bg-[#19456B] overflow-hidden">
+<div class="w-full min-h-12 h-16 bg-[#19456B] overflow-hidden">
     <div class="w-full h-full container mx-auto flex items-center justify-between px-4">
         <div class="w-auto h-full flex gap-x-5 items-center font-semibold">
             <img class="w-auto h-full object-cover" src="https://www.gamingonlinux.com/templates/default/images/logos/icon_mouse.png" alt="logo">

@@ -10,10 +10,9 @@
     </head>
     <body>
 
-        <div class="w-screen h-dvh bg-[#061522] flex items-center justify-center flex-col gap-y-2">
+        <div class="w-screen h-dvh bg-[#061522] flex flex-col gap-y-2">
 
             @livewire('home.comp.nav-bar')
-
 
             {{ $slot }}
         </div>
