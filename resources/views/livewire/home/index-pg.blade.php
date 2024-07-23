@@ -29,25 +29,40 @@
 
             {{-- Blog Area --}}
             @for ($i = 0; $i < 10; $i++)
-                <div class="w-full h-[480px] md:h-72 bg-slate-800 mb-4 flex items-center max-sm:flex-col md:flex-row hover:shadow-[0px_0px_1px_1px_#11698E]">
+                <div
+                    class="w-full h-[480px] md:h-72 bg-slate-800 mb-4 flex items-center max-sm:flex-col md:flex-row hover:shadow-[0px_0px_1px_1px_#11698E]">
                     <div class="w-full md:w-2/5 h-1/2 md:h-full">
-                        <img class="size-full object-cover" src="https://wallpapercave.com/wp/wp13057350.jpg" alt="blog-image">
+                        <img class="size-full object-cover" src="https://wallpapercave.com/wp/wp13057350.jpg"
+                            alt="blog-image">
                     </div>
 
                     <div class="w-full md:w-3/5 h-full flex flex-col gap-y-3 px-4">
-                        <h3 class="text-2xl md:text-3xl text-[#11698E] max-sm:line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum rerum dicta?</h3>
-                        <p class="text-slate-400 text-sm">By <span class="text-[#11698E] font-semibold">Enderman</span>, about 1 hours ago</p>
-                        <p class="text-slate-300 text-lg leading-6 max-sm:line-clamp-2 md:line-clamp-4 md:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id doloremque unde facilis numquam architecto suscipit delectus!</p>
+                        <h3 class="text-2xl md:text-3xl text-[#11698E] max-sm:line-clamp-3">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Quos ipsum rerum dicta?</h3>
+                        <p class="text-slate-400 text-sm">By <span class="text-[#11698E] font-semibold">Enderman</span>,
+                            about 1 hours ago</p>
+                        <p class="text-slate-300 text-lg leading-6 max-sm:line-clamp-2 md:line-clamp-4 md:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatem velit obcaecati enim quam, inventore beatae molestiae minus ipsam est aspernatur laudantium doloremque maxime maiores dignissimos, corporis consequatur dolore rerum.</p>
                         <div class="w-full h-auto flex items-center gap-x-2">
-                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">Gaming</div>
-                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">Linux</div>
-                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">Steam Deck</div>
-                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">Proton</div>
+                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">
+                                Gaming</div>
+                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">
+                                Linux</div>
+                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">
+                                Steam Deck</div>
+                            <div class="px-1 md:px-4 py-1 bg-[#11698E] text-slate-300 rounded-md whitespace-nowrap">
+                                Proton</div>
                         </div>
                     </div>
                 </div>
             @endfor
 
+            <div class="w-full h-12 flex items-center gap-x-2">
+                <div class="px-3 py-1 bg-slate-500 text-[#F8F1F1] rounded-md"><</div>
+                <div class="px-3 py-1 bg-slate-500 text-[#F8F1F1] rounded-md">1</div>
+                <div class="px-3 py-1 bg-slate-500 text-[#F8F1F1] rounded-md">...</div>
+                <div class="px-3 py-1 bg-slate-500 text-[#F8F1F1] rounded-md">13</div>
+                <div class="px-3 py-1 bg-slate-500 text-[#F8F1F1] rounded-md">></div>
+            </div>
         </div>
         <div class="w-1/4 hidden lg:block">
             <div class="w-full h-12 bg-[#11698E] rounded-t-md flex flex-col items-start justify-center px-4">
@@ -56,7 +71,9 @@
 
             <div class="w-full flex items-center flex-col bg-slate-800">
                 @for ($i = 0; $i < 5; $i++)
-                    <a href="/" class="text-xl line-clamp-3 text-[#11698E] p-4 border-b border-[#061522]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusantium.</a>
+                    <x-button.nav-button url='/'
+                        class="text-xl line-clamp-3 text-[#11698E] p-4 border-b border-[#061522] hover:text-[#11698E]">Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eligendi!</x-button.nav-button>
                 @endfor
             </div>
 
@@ -66,7 +83,9 @@
 
             <div class="w-full flex items-center flex-col bg-slate-800">
                 @for ($i = 0; $i < 5; $i++)
-                    <a href="/" class="text-xl line-clamp-3 text-[#11698E] p-4 border-b border-[#061522]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, accusantium.</a>
+                    <x-button.nav-button url='/'
+                        class="text-xl line-clamp-3 text-[#11698E] p-4 border-b border-[#061522] hover:text-[#11698E]">Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, eligendi!</x-button.nav-button>
                 @endfor
             </div>
         </div>
